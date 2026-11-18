@@ -1,5 +1,6 @@
 #!/bin/bash
-if [ -f icon-source.png ]; then
+# if [ -f icon-source.png ]; then
+if false; then
   PY=$(command -v python3 || command -v python)
   $PY -m pip install pillow || $PY -m pip install --break-system-packages pillow
   $PY ci/mkicons.py
