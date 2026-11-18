@@ -1971,7 +1971,7 @@ function growAll(){Array.prototype.forEach.call(document.querySelectorAll('.fiel
 document.addEventListener('input',function(e){if(e.target&&e.target.tagName==='TEXTAREA')growTa(e.target)});
 document.addEventListener('focusin',function(e){if(e.target&&e.target.tagName==='TEXTAREA')growTa(e.target)});
 setInterval(growAll,400);
-var DL_PAGE='https://github.com/hope-cs/matab-alshifa/releases/latest';
+var DL_PAGE='https://hope-cs.github.io/matab-alshifa/download.html';
 function abStats(n){var d=document.getElementById('ab-dl');if(!d){if((n||0)<10)setTimeout(function(){abStats((n||0)+1)},120);return}
  fetch('https://api.github.com/repos/hope-cs/matab-alshifa/releases/tags/latest').then(function(r){return r.json()}).then(function(j){
   var as=j.assets||[],tot=0,pick=null,apk=nativeApp()||/android/i.test(navigator.userAgent);
